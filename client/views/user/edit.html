@@ -1,0 +1,161 @@
+<form class="form-horizontal" ng-submit="saveAndUpdate()">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Profile Form</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="firstname">firstname</label>  
+  <div class="col-md-4">
+  <input id="firstname" name="firstname" ng-model="profileForm.firstname" type="text" placeholder="firstname" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="lastname">Lastname</label>  
+  <div class="col-md-4">
+  <input id="lastname" name="lastname" ng-model="profileForm.lastname" type="text" placeholder="Lastname" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email</label>  
+  <div class="col-md-4">
+  <input id="email" name="email" ng-model="profileForm.email" type="text" placeholder="Email" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="phone">Phone</label>  
+  <div class="col-md-4">
+  <input id="phone" name="phone" type="text" ng-model="profileForm.phone" placeholder="phone" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="address">Address</label>  
+  <div class="col-md-4">
+  <input id="address" name="address" type="text" ng-model="profileForm.address" placeholder="Address" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="state">State</label>  
+  <div class="col-md-4">
+  <input id="state" name="state" type="text" ng-model="profileForm.state" placeholder="State" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="city">City</label>  
+  <div class="col-md-4">
+  <input id="city" name="city" type="text" ng-model="profileForm.city" placeholder="City" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="gender">Gender</label>
+  <div class="col-md-4">
+    <select ng-model="profileForm.gender">
+        <option value="male">male</option>
+        <option value="female">female</option>
+    </select>
+    </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="dob">D.O.B</label>  
+  <div class="col-md-4">
+  <input id="dob" name="dob" ng-model="profileForm.dob" type="text" placeholder="Date of Birth" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="rollno">University Roll No.</label>  
+  <div class="col-md-4">
+  <input id="rollno" name="rollno" ng-model="profileForm.rollNo" type="text" placeholder="Roll no" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="course">Course</label>  
+  <div class="col-md-4">
+  <input id="course" name="course" ng-model="profileForm.course" type="text" placeholder="Course" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="branch">Branch</label>  
+  <div class="col-md-4">
+  <input id="branch" name="branch" ng-model="profileForm.branch" type="text" placeholder="Branch" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="backlogs">No of Backlogs</label>  
+  <div class="col-md-4">
+  <input id="backlogs" name="backlogs" ng-model="profileForm.noOfBacklogs" type="text" placeholder="Backlogs" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="yearOfPassing">Year of Passing</label>  
+  <div class="col-md-4">
+  <input id="yearOfPassing" name="yearOfPassing" ng-model="profileForm.yearOfPassing" type="text" placeholder="Passing Year" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="percentage">Percentage</label>  
+  <div class="col-md-4">
+  <input id="percentage" name="percentage" ng-model="profileForm.percentage" type="text" placeholder="Percentage" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="sgpa">Sgpa</label>  
+  <div class="col-md-4">
+  <input id="sgpa" name="sgpa" type="text" ng-model="profileForm.age" placeholder="Sgpa" class="form-control input-md">
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" type="submit" name="submit" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>

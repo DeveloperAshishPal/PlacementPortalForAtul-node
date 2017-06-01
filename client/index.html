@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--pp means palcement portal-->
+<html lang="en" ng-app="pp">
+<head>
+    <meta charset="UTF-8">
+    <title>Placement Portal</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body ng-controller="mainCtrl">
+    <div class="container-fluid">
+    <div class="row">
+	
+        
+   <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-3">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">BMIET Placement Portal</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-3">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#/">Home</a></li>
+            <li><a href="#/public/about">About</a></li>
+            <li><a href="#/public/contact">Contact</a></li>
+            <li ng-if="!me"><a href="#/login">Login</a></li>
+            <li ng-if="!me"><a href="#/register">Register</a></li>
+            <li ng-if="!me"><a href="#/recruiter/login">Recruiters</a></li>
+            <li ng-if="me"><a ng-href="{{dashboardUrl}}">dashboard</a></li>
+            <li ng-if="me"><a class="btn btn-link" ng-click="logout()">logout</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+        
+	</div>
+	
+	<div ng-view></div>
+	
+	<div >
+	    <!--footer yet to come -->
+	   <div class="well">
+	       <h4 class=" text-center">BMIET Placement Portal by Atul singh &amp; Sudhanshu sikri</h4>
+	   </div>
+	</div>
+</div>
+       
+             
+            
+    
+    
+    <!--dependencies-->
+    <script src="assets/js/dependencies/jquery.js"></script>
+    <script src="assets/js/dependencies/bootstrap.min.js"></script>
+    <script src="assets/js/dependencies/angular.min.js"></script>
+    <script src="assets/js/dependencies/angular-route.min.js"></script>
+    <script src="assets/js/dependencies/angular-cookies.min.js"></script>
+    <script src="assets/js/dependencies/compareTo.module.js"></script>
+    
+    <!--scripts-->
+    <script src="app.js"></script>
+    <script src="assets/js/aboutCtrl.js"></script>
+    <script src="assets/js/contactCtrl.js"></script>
+    <script src="assets/js/welcomeCtrl.js"></script>
+    <script src="assets/js/admin/loginCtrl.js"></script>
+    <script src="assets/js/admin/registerCtrl.js"></script>
+    <script src="assets/js/user/loginCtrl.js"></script>
+    <script src="assets/js/user/registerCtrl.js"></script>
+    <script src="assets/js/admin/dashboardCtrl.js"></script>
+    <script src="assets/js/user/dashboardCtrl.js"></script>
+    <script src="assets/js/user/userProfileCtrl.js"></script>
+</body>
+</html>
